@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OIC Integration Updater Result</title>
+    <style>
+        body {
+            font-family: "Oracle Sans", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f6f5f3;
+            color: #1d1d1d;
+        }
+        header {
+            background-color: #d3e5ff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            background-color: #0078d4;
+            color: #ffffff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        a:hover {
+            background-color: #005a9e;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>OIC Integration Updater Result</h1>
+    </header>
+    <div class="container">
+        <ul>
+            {% for result in results %}
+            <li>{{ result }}</li>
+            {% endfor %}
+        </ul>
+        <a href="/">Go back</a>
+    </div>
+</body>
+</html>
